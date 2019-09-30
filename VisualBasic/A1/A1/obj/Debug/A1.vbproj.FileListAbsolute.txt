@@ -1,0 +1,12 @@
+C:\Users\DAWEC\source\repos\A1\A1\bin\Debug\A1.exe.config
+C:\Users\DAWEC\source\repos\A1\A1\bin\Debug\A1.exe
+C:\Users\DAWEC\source\repos\A1\A1\bin\Debug\A1.pdb
+C:\Users\DAWEC\source\repos\A1\A1\bin\Debug\A1.xml
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.vbprojAssemblyReference.cache
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.Form1.resources
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.Resources.resources
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.vbproj.GenerateResource.cache
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.vbproj.CoreCompileInputs.cache
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.exe
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.xml
+C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.pdb
