@@ -1,0 +1,12 @@
+C:\vb\ListView\ListView\obj\Debug\ListView.vbprojAssemblyReference.cache
+C:\vb\ListView\ListView\obj\Debug\ListView.Resources.resources
+C:\vb\ListView\ListView\obj\Debug\ListView.vbproj.GenerateResource.cache
+C:\vb\ListView\ListView\obj\Debug\ListView.vbproj.CoreCompileInputs.cache
+C:\vb\ListView\ListView\bin\Debug\ListView.exe.config
+C:\vb\ListView\ListView\bin\Debug\ListView.exe
+C:\vb\ListView\ListView\bin\Debug\ListView.pdb
+C:\vb\ListView\ListView\bin\Debug\ListView.xml
+C:\vb\ListView\ListView\obj\Debug\ListView.frmListView.resources
+C:\vb\ListView\ListView\obj\Debug\ListView.exe
+C:\vb\ListView\ListView\obj\Debug\ListView.xml
+C:\vb\ListView\ListView\obj\Debug\ListView.pdb

@@ -1,0 +1,10 @@
+C:\vb\consola\consola\bin\Debug\consola.exe.config
+C:\vb\consola\consola\bin\Debug\consola.exe
+C:\vb\consola\consola\bin\Debug\consola.pdb
+C:\vb\consola\consola\bin\Debug\consola.xml
+C:\vb\consola\consola\obj\Debug\consola.Resources.resources
+C:\vb\consola\consola\obj\Debug\consola.vbproj.GenerateResource.cache
+C:\vb\consola\consola\obj\Debug\consola.vbproj.CoreCompileInputs.cache
+C:\vb\consola\consola\obj\Debug\consola.exe
+C:\vb\consola\consola\obj\Debug\consola.xml
+C:\vb\consola\consola\obj\Debug\consola.pdb

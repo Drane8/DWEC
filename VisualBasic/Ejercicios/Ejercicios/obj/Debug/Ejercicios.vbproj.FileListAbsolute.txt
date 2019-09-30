@@ -1,0 +1,12 @@
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\bin\Debug\Ejercicios.exe.config
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\bin\Debug\Ejercicios.exe
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\bin\Debug\Ejercicios.pdb
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\bin\Debug\Ejercicios.xml
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.vbprojAssemblyReference.cache
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.fOperaciones.resources
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.Resources.resources
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.vbproj.GenerateResource.cache
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.vbproj.CoreCompileInputs.cache
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.exe
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.xml
+D:\DWEC\VisualBasic\Ejercicios\Ejercicios\obj\Debug\Ejercicios.pdb

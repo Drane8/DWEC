@@ -1,0 +1,12 @@
+D:\DWEC\VisualBasic\primero\primero\bin\Debug\primero.exe.config
+D:\DWEC\VisualBasic\primero\primero\bin\Debug\primero.exe
+D:\DWEC\VisualBasic\primero\primero\bin\Debug\primero.pdb
+D:\DWEC\VisualBasic\primero\primero\bin\Debug\primero.xml
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.vbprojAssemblyReference.cache
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.Resources.resources
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.vbproj.GenerateResource.cache
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.vbproj.CoreCompileInputs.cache
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.exe
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.xml
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.pdb
+D:\DWEC\VisualBasic\primero\primero\obj\Debug\primero.frmPrincipal.resources

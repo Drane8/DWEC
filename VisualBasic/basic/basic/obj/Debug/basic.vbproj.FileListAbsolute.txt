@@ -1,0 +1,11 @@
+D:\DWEC\VisualBasic\basic\basic\bin\Debug\basic.exe.config
+D:\DWEC\VisualBasic\basic\basic\bin\Debug\basic.exe
+D:\DWEC\VisualBasic\basic\basic\bin\Debug\basic.pdb
+D:\DWEC\VisualBasic\basic\basic\bin\Debug\basic.xml
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.vbprojAssemblyReference.cache
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.Resources.resources
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.vbproj.GenerateResource.cache
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.vbproj.CoreCompileInputs.cache
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.exe
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.xml
+D:\DWEC\VisualBasic\basic\basic\obj\Debug\basic.pdb
