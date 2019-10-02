@@ -10,3 +10,15 @@ C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.vbproj.CoreCompileInputs.cache
 C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.exe
 C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.xml
 C:\Users\DAWEC\source\repos\A1\A1\obj\Debug\A1.pdb
+D:\DWEC\DWEC\VisualBasic\A1\A1\bin\Debug\A1.exe.config
+D:\DWEC\DWEC\VisualBasic\A1\A1\bin\Debug\A1.exe
+D:\DWEC\DWEC\VisualBasic\A1\A1\bin\Debug\A1.pdb
+D:\DWEC\DWEC\VisualBasic\A1\A1\bin\Debug\A1.xml
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.vbprojAssemblyReference.cache
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.fA1.resources
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.Resources.resources
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.vbproj.GenerateResource.cache
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.vbproj.CoreCompileInputs.cache
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.exe
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.xml
+D:\DWEC\DWEC\VisualBasic\A1\A1\obj\Debug\A1.pdb

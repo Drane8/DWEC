@@ -174,6 +174,7 @@ Partial Class fA1
         'lblResul
         '
         Me.lblResul.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.lblResul.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblResul.Location = New System.Drawing.Point(12, 203)
         Me.lblResul.Name = "lblResul"
         Me.lblResul.Size = New System.Drawing.Size(212, 28)
@@ -199,6 +200,7 @@ Partial Class fA1
         Me.Controls.Add(Me.rbMul)
         Me.Controls.Add(Me.rbRes)
         Me.Controls.Add(Me.rbSum)
+        Me.MinimumSize = New System.Drawing.Size(257, 290)
         Me.Name = "fA1"
         Me.Text = "Ejercicio A1"
         Me.ResumeLayout(False)
