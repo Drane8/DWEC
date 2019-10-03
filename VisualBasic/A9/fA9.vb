@@ -17,7 +17,6 @@
 
             For Each numero As Integer In digitos
                 suma += Math.Pow(numero, 3)
-                MessageBox.Show(suma)
             Next
 
             If suma = num Then
