@@ -18,7 +18,8 @@
 
         For i As Integer = 0 To 2
             For j As Integer = 0 To 2
-                If (i = j) Then total += matriz(i, j)
+                If i = j Then total += matriz(i, j)
+                If i + j = matriz.GetLength(0) Then total += matriz(i, j)
             Next
         Next
         lblResul.Text = "Suma: " & total
