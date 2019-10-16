@@ -30,6 +30,7 @@ Partial Class fC4
         Me.btnNota = New System.Windows.Forms.Button()
         Me.btnMedia = New System.Windows.Forms.Button()
         Me.lblMedia = New System.Windows.Forms.Label()
+        Me.btnAlumno = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lbAlumnos
@@ -87,7 +88,7 @@ Partial Class fC4
         Me.btnMedia.Name = "btnMedia"
         Me.btnMedia.Size = New System.Drawing.Size(151, 40)
         Me.btnMedia.TabIndex = 6
-        Me.btnMedia.Text = "Calcular media"
+        Me.btnMedia.Text = "Calcular media total"
         Me.btnMedia.UseVisualStyleBackColor = True
         '
         'lblMedia
@@ -99,11 +100,21 @@ Partial Class fC4
         Me.lblMedia.Text = "Media: 00.00"
         Me.lblMedia.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'btnAlumno
+        '
+        Me.btnAlumno.Location = New System.Drawing.Point(133, 169)
+        Me.btnAlumno.Name = "btnAlumno"
+        Me.btnAlumno.Size = New System.Drawing.Size(151, 23)
+        Me.btnAlumno.TabIndex = 8
+        Me.btnAlumno.Text = "Calcular media alumno"
+        Me.btnAlumno.UseVisualStyleBackColor = True
+        '
         'fC4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 263)
+        Me.Controls.Add(Me.btnAlumno)
         Me.Controls.Add(Me.lblMedia)
         Me.Controls.Add(Me.btnMedia)
         Me.Controls.Add(Me.btnNota)
@@ -127,4 +138,5 @@ Partial Class fC4
     Friend WithEvents btnNota As Button
     Friend WithEvents btnMedia As Button
     Friend WithEvents lblMedia As Label
+    Friend WithEvents btnAlumno As Button
 End Class

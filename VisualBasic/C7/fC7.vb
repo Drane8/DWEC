@@ -1,16 +1,19 @@
 ﻿Public Class fC7
-    Dim matrizOriginal(1, 3) As Integer
+    Dim matrizOriginal(3, 3) As Integer
     Private Sub FC7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomize()
-        For i As Integer = 0 To 1
+        For i As Integer = 0 To 3
             For j As Integer = 0 To 3
-                matrizOriginal(i, j) = CInt(10 * Rnd())
+                matrizOriginal(i, j) = CInt(9 * Rnd())
             Next
         Next
-
         For i As Integer = 0 To 3
-            lvArrayOriginal.Items.Add(matrizOriginal(0, i))
-            lvArrayOriginal.Items(i).SubItems.Add(matrizOriginal(1, i))
+            lvArrayOriginal.Columns.Add("")
+            lvArrayOriginal.Columns(i).Width() = 20
+            lvArrayOriginal.Items.Add(matrizOriginal(i, 0))
+            For j As Integer = 1 To 3
+                lvArrayOriginal.Items(i).SubItems.Add(matrizOriginal(i, j))
+            Next
         Next
     End Sub
 End Class

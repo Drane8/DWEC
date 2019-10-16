@@ -58,4 +58,18 @@
         Next
         lblMedia.Text = "Media: " & (media / contador)
     End Sub
+
+    Private Sub BtnAlumno_Click(sender As Object, e As EventArgs) Handles btnAlumno.Click
+        Dim media As Double = 0
+        If lbAlumnos.SelectedIndex >= 0 Then
+            Dim notas As ArrayList = list.ElementAt(lbAlumnos.SelectedIndex).Value
+            For Each nota As Double In notas
+                media += nota
+            Next
+            media /= notas.Count
+            lblMedia.Text = "Media: " & media
+        Else
+            MessageBox.Show("Selecciona un elemento de la lista")
+        End If
+    End Sub
 End Class
