@@ -23,7 +23,7 @@ Partial Class fC7
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lvArrayOriginal = New System.Windows.Forms.ListView()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvArrayCambiado = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnMover = New System.Windows.Forms.Button()
@@ -43,19 +43,19 @@ Partial Class fC7
         Me.lvArrayOriginal.UseCompatibleStateImageBehavior = False
         Me.lvArrayOriginal.View = System.Windows.Forms.View.Details
         '
-        'ListView1
+        'lvArrayCambiado
         '
-        Me.ListView1.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid
-        Me.ListView1.FullRowSelect = True
-        Me.ListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(127, 12)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(93, 80)
-        Me.ListView1.TabIndex = 0
-        Me.ListView1.TileSize = New System.Drawing.Size(30, 30)
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvArrayCambiado.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid
+        Me.lvArrayCambiado.FullRowSelect = True
+        Me.lvArrayCambiado.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
+        Me.lvArrayCambiado.HideSelection = False
+        Me.lvArrayCambiado.Location = New System.Drawing.Point(127, 12)
+        Me.lvArrayCambiado.Name = "lvArrayCambiado"
+        Me.lvArrayCambiado.Size = New System.Drawing.Size(93, 80)
+        Me.lvArrayCambiado.TabIndex = 0
+        Me.lvArrayCambiado.TileSize = New System.Drawing.Size(30, 30)
+        Me.lvArrayCambiado.UseCompatibleStateImageBehavior = False
+        Me.lvArrayCambiado.View = System.Windows.Forms.View.Details
         '
         'Label1
         '
@@ -92,7 +92,7 @@ Partial Class fC7
         Me.Controls.Add(Me.btnMover)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvArrayCambiado)
         Me.Controls.Add(Me.lvArrayOriginal)
         Me.Name = "fC7"
         Me.Text = "Ejercicio C7"
@@ -102,7 +102,7 @@ Partial Class fC7
     End Sub
 
     Friend WithEvents lvArrayOriginal As ListView
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvArrayCambiado As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents btnMover As Button
