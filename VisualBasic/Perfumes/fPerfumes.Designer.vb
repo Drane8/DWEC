@@ -28,7 +28,7 @@ Partial Class fPerfumes
         Me.lbUnidades = New System.Windows.Forms.ListBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lbPrecio = New System.Windows.Forms.ListBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pbPerfume = New System.Windows.Forms.PictureBox()
         Me.lbVentas = New System.Windows.Forms.ListBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnVenta = New System.Windows.Forms.Button()
@@ -36,11 +36,11 @@ Partial Class fPerfumes
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.rbtn10 = New System.Windows.Forms.RadioButton()
-        Me.rbtn20 = New System.Windows.Forms.RadioButton()
         Me.rbtn50 = New System.Windows.Forms.RadioButton()
+        Me.rbtn20 = New System.Windows.Forms.RadioButton()
+        Me.rbtn10 = New System.Windows.Forms.RadioButton()
         Me.btnSalir = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPerfume, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -98,13 +98,15 @@ Partial Class fPerfumes
         Me.lbPrecio.Size = New System.Drawing.Size(51, 134)
         Me.lbPrecio.TabIndex = 1
         '
-        'PictureBox1
+        'pbPerfume
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(273, 25)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(134, 212)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.pbPerfume.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pbPerfume.Location = New System.Drawing.Point(273, 25)
+        Me.pbPerfume.Name = "pbPerfume"
+        Me.pbPerfume.Size = New System.Drawing.Size(134, 212)
+        Me.pbPerfume.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbPerfume.TabIndex = 2
+        Me.pbPerfume.TabStop = False
         '
         'lbVentas
         '
@@ -173,17 +175,16 @@ Partial Class fPerfumes
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Descuento"
         '
-        'rbtn10
+        'rbtn50
         '
-        Me.rbtn10.AutoSize = True
-        Me.rbtn10.Checked = True
-        Me.rbtn10.Location = New System.Drawing.Point(6, 19)
-        Me.rbtn10.Name = "rbtn10"
-        Me.rbtn10.Size = New System.Drawing.Size(45, 17)
-        Me.rbtn10.TabIndex = 0
-        Me.rbtn10.TabStop = True
-        Me.rbtn10.Text = "10%"
-        Me.rbtn10.UseVisualStyleBackColor = True
+        Me.rbtn50.AutoSize = True
+        Me.rbtn50.Location = New System.Drawing.Point(148, 19)
+        Me.rbtn50.Name = "rbtn50"
+        Me.rbtn50.Size = New System.Drawing.Size(45, 17)
+        Me.rbtn50.TabIndex = 0
+        Me.rbtn50.TabStop = True
+        Me.rbtn50.Text = "50%"
+        Me.rbtn50.UseVisualStyleBackColor = True
         '
         'rbtn20
         '
@@ -196,16 +197,17 @@ Partial Class fPerfumes
         Me.rbtn20.Text = "20%"
         Me.rbtn20.UseVisualStyleBackColor = True
         '
-        'rbtn50
+        'rbtn10
         '
-        Me.rbtn50.AutoSize = True
-        Me.rbtn50.Location = New System.Drawing.Point(148, 19)
-        Me.rbtn50.Name = "rbtn50"
-        Me.rbtn50.Size = New System.Drawing.Size(45, 17)
-        Me.rbtn50.TabIndex = 0
-        Me.rbtn50.TabStop = True
-        Me.rbtn50.Text = "50%"
-        Me.rbtn50.UseVisualStyleBackColor = True
+        Me.rbtn10.AutoSize = True
+        Me.rbtn10.Checked = True
+        Me.rbtn10.Location = New System.Drawing.Point(6, 19)
+        Me.rbtn10.Name = "rbtn10"
+        Me.rbtn10.Size = New System.Drawing.Size(45, 17)
+        Me.rbtn10.TabIndex = 0
+        Me.rbtn10.TabStop = True
+        Me.rbtn10.Text = "10%"
+        Me.rbtn10.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
@@ -226,7 +228,7 @@ Partial Class fPerfumes
         Me.Controls.Add(Me.tbUnidades)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVenta)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbPerfume)
         Me.Controls.Add(Me.lbPrecio)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label4)
@@ -238,7 +240,7 @@ Partial Class fPerfumes
         Me.Controls.Add(Me.Label1)
         Me.Name = "fPerfumes"
         Me.Text = "Perfumes"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPerfume, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -252,7 +254,7 @@ Partial Class fPerfumes
     Friend WithEvents lbUnidades As ListBox
     Friend WithEvents Label3 As Label
     Friend WithEvents lbPrecio As ListBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pbPerfume As PictureBox
     Friend WithEvents lbVentas As ListBox
     Friend WithEvents Label4 As Label
     Friend WithEvents btnVenta As Button

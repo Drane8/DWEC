@@ -16,6 +16,11 @@
         indice = lbPerfumes.SelectedIndex
         lbPrecio.SelectedIndex = indice
         lbUnidades.SelectedIndex = indice
+        Try
+            pbPerfume.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory & "..\..\Resources\img\" & lbPerfumes.SelectedItem.ToString & ".jpg")
+        Catch ex As System.IO.FileNotFoundException
+            pbPerfume.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory & "..\..\Resources\img\NODISP.jpg")
+        End Try
     End Sub
 
     Private Sub BtnVenta_Click(sender As Object, e As EventArgs) Handles btnVenta.Click
