@@ -157,6 +157,7 @@ Partial Class fEmbalses
         Me.tbPorcentaje.Name = "tbPorcentaje"
         Me.tbPorcentaje.Size = New System.Drawing.Size(100, 20)
         Me.tbPorcentaje.TabIndex = 2
+        Me.tbPorcentaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -225,6 +226,7 @@ Partial Class fEmbalses
         'rbtnModificar
         '
         Me.rbtnModificar.AutoSize = True
+        Me.rbtnModificar.Checked = True
         Me.rbtnModificar.Location = New System.Drawing.Point(7, 20)
         Me.rbtnModificar.Name = "rbtnModificar"
         Me.rbtnModificar.Size = New System.Drawing.Size(166, 17)
@@ -262,7 +264,7 @@ Partial Class fEmbalses
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 280)
+        Me.ClientSize = New System.Drawing.Size(416, 283)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label7)
