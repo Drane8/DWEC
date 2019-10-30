@@ -23,44 +23,49 @@ Partial Class fVuelos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbOrigen = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.rbtnInternacional = New System.Windows.Forms.RadioButton()
+        Me.rbtnNacional = New System.Windows.Forms.RadioButton()
+        Me.lbNacional = New System.Windows.Forms.ListBox()
+        Me.lbInternacional = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
-        Me.ListBox4 = New System.Windows.Forms.ListBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.numBilletes = New System.Windows.Forms.NumericUpDown()
+        Me.cbTarifa = New System.Windows.Forms.ComboBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.lbVuelos = New System.Windows.Forms.ListBox()
+        Me.lbPrecios = New System.Windows.Forms.ListBox()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblPrecio = New System.Windows.Forms.Label()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnAnular = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numBilletes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(6, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Origen"
         '
-        'ComboBox1
+        'cbOrigen
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 31)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.cbOrigen.FormattingEnabled = True
+        Me.cbOrigen.Location = New System.Drawing.Point(9, 31)
+        Me.cbOrigen.Name = "cbOrigen"
+        Me.cbOrigen.Size = New System.Drawing.Size(121, 21)
+        Me.cbOrigen.TabIndex = 1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.rbtnInternacional)
+        Me.GroupBox1.Controls.Add(Me.rbtnNacional)
         Me.GroupBox1.Location = New System.Drawing.Point(142, 13)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(250, 39)
@@ -68,145 +73,204 @@ Partial Class fVuelos
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Destino"
         '
-        'RadioButton2
+        'rbtnInternacional
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(156, 16)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(86, 17)
-        Me.RadioButton2.TabIndex = 0
-        Me.RadioButton2.Text = "Internacional"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbtnInternacional.AutoSize = True
+        Me.rbtnInternacional.Location = New System.Drawing.Point(156, 16)
+        Me.rbtnInternacional.Name = "rbtnInternacional"
+        Me.rbtnInternacional.Size = New System.Drawing.Size(86, 17)
+        Me.rbtnInternacional.TabIndex = 0
+        Me.rbtnInternacional.Text = "Internacional"
+        Me.rbtnInternacional.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rbtnNacional
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(6, 16)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(67, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Nacional"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbtnNacional.AutoSize = True
+        Me.rbtnNacional.Checked = True
+        Me.rbtnNacional.Location = New System.Drawing.Point(6, 16)
+        Me.rbtnNacional.Name = "rbtnNacional"
+        Me.rbtnNacional.Size = New System.Drawing.Size(67, 17)
+        Me.rbtnNacional.TabIndex = 0
+        Me.rbtnNacional.TabStop = True
+        Me.rbtnNacional.Text = "Nacional"
+        Me.rbtnNacional.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lbNacional
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(142, 58)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 82)
-        Me.ListBox1.TabIndex = 3
+        Me.lbNacional.FormattingEnabled = True
+        Me.lbNacional.Location = New System.Drawing.Point(142, 58)
+        Me.lbNacional.Name = "lbNacional"
+        Me.lbNacional.Size = New System.Drawing.Size(120, 82)
+        Me.lbNacional.TabIndex = 3
         '
-        'ListBox2
+        'lbInternacional
         '
-        Me.ListBox2.Enabled = False
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(272, 58)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(120, 82)
-        Me.ListBox2.TabIndex = 3
+        Me.lbInternacional.Enabled = False
+        Me.lbInternacional.FormattingEnabled = True
+        Me.lbInternacional.Location = New System.Drawing.Point(272, 58)
+        Me.lbInternacional.Name = "lbInternacional"
+        Me.lbInternacional.Size = New System.Drawing.Size(120, 82)
+        Me.lbInternacional.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 78)
+        Me.Label2.Location = New System.Drawing.Point(6, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Nº de billetes"
         '
-        'NumericUpDown1
+        'numBilletes
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(87, 74)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(46, 20)
-        Me.NumericUpDown1.TabIndex = 5
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.numBilletes.Location = New System.Drawing.Point(84, 69)
+        Me.numBilletes.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.numBilletes.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.numBilletes.Name = "numBilletes"
+        Me.numBilletes.Size = New System.Drawing.Size(46, 20)
+        Me.numBilletes.TabIndex = 5
+        Me.numBilletes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.numBilletes.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'ComboBox2
+        'cbTarifa
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"---seleccione tarifa---", "Básica.....150€", "Clásica....200€", "Extra........300€", "VIP...........500€"})
-        Me.ComboBox2.Location = New System.Drawing.Point(12, 117)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 1
+        Me.cbTarifa.FormattingEnabled = True
+        Me.cbTarifa.Location = New System.Drawing.Point(9, 119)
+        Me.cbTarifa.Name = "cbTarifa"
+        Me.cbTarifa.Size = New System.Drawing.Size(121, 21)
+        Me.cbTarifa.TabIndex = 1
         '
-        'Button1
+        'btnAdd
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 156)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(69, 95)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAdd.Location = New System.Drawing.Point(9, 156)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(69, 95)
+        Me.btnAdd.TabIndex = 6
+        Me.btnAdd.Text = "Añadir vuelo"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'ListBox3
+        'lbVuelos
         '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Location = New System.Drawing.Point(92, 156)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(150, 95)
-        Me.ListBox3.TabIndex = 3
+        Me.lbVuelos.FormattingEnabled = True
+        Me.lbVuelos.Location = New System.Drawing.Point(84, 156)
+        Me.lbVuelos.Name = "lbVuelos"
+        Me.lbVuelos.Size = New System.Drawing.Size(158, 95)
+        Me.lbVuelos.TabIndex = 3
         '
-        'ListBox4
+        'lbPrecios
         '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.Location = New System.Drawing.Point(248, 156)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(69, 95)
-        Me.ListBox4.TabIndex = 3
+        Me.lbPrecios.Enabled = False
+        Me.lbPrecios.FormattingEnabled = True
+        Me.lbPrecios.Location = New System.Drawing.Point(248, 156)
+        Me.lbPrecios.Name = "lbPrecios"
+        Me.lbPrecios.Size = New System.Drawing.Size(69, 95)
+        Me.lbPrecios.TabIndex = 3
         '
-        'Button2
+        'btnEliminar
         '
-        Me.Button2.Location = New System.Drawing.Point(323, 156)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(69, 95)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Button1"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnEliminar.Location = New System.Drawing.Point(323, 156)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(69, 95)
+        Me.btnEliminar.TabIndex = 6
+        Me.btnEliminar.Text = "Eliminar vuelo"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(104, 257)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(125, 20)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Total a pagar -->"
+        '
+        'lblPrecio
+        '
+        Me.lblPrecio.AutoSize = True
+        Me.lblPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio.Location = New System.Drawing.Point(244, 257)
+        Me.lblPrecio.Name = "lblPrecio"
+        Me.lblPrecio.Size = New System.Drawing.Size(40, 20)
+        Me.lblPrecio.TabIndex = 7
+        Me.lblPrecio.Text = "0,00"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(9, 344)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(383, 35)
+        Me.btnSalir.TabIndex = 8
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'btnAceptar
+        '
+        Me.btnAceptar.Location = New System.Drawing.Point(9, 284)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(233, 54)
+        Me.btnAceptar.TabIndex = 8
+        Me.btnAceptar.Text = "ACEPTAR COMPRA"
+        Me.btnAceptar.UseVisualStyleBackColor = True
+        '
+        'btnAnular
+        '
+        Me.btnAnular.Location = New System.Drawing.Point(248, 284)
+        Me.btnAnular.Name = "btnAnular"
+        Me.btnAnular.Size = New System.Drawing.Size(144, 54)
+        Me.btnAnular.TabIndex = 8
+        Me.btnAnular.Text = "ANULAR COMPRA"
+        Me.btnAnular.UseVisualStyleBackColor = True
         '
         'fVuelos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.NumericUpDown1)
+        Me.ClientSize = New System.Drawing.Size(399, 393)
+        Me.Controls.Add(Me.btnAnular)
+        Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.lblPrecio)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.numBilletes)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ListBox4)
-        Me.Controls.Add(Me.ListBox3)
-        Me.Controls.Add(Me.ListBox2)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lbPrecios)
+        Me.Controls.Add(Me.lbVuelos)
+        Me.Controls.Add(Me.lbInternacional)
+        Me.Controls.Add(Me.lbNacional)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbTarifa)
+        Me.Controls.Add(Me.cbOrigen)
         Me.Controls.Add(Me.Label1)
         Me.Name = "fVuelos"
         Me.Text = "Vuelos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numBilletes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbOrigen As ComboBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents rbtnInternacional As RadioButton
+    Friend WithEvents rbtnNacional As RadioButton
+    Friend WithEvents lbNacional As ListBox
+    Friend WithEvents lbInternacional As ListBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ListBox3 As ListBox
-    Friend WithEvents ListBox4 As ListBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents numBilletes As NumericUpDown
+    Friend WithEvents cbTarifa As ComboBox
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents lbVuelos As ListBox
+    Friend WithEvents lbPrecios As ListBox
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblPrecio As Label
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnAnular As Button
 End Class
