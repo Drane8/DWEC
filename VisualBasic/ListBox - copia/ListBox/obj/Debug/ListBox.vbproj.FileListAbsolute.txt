@@ -34,3 +34,15 @@ D:\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.vbproj.CoreCompile
 D:\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.exe
 D:\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.xml
 D:\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.pdb
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\bin\Debug\ListBox.exe.config
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\bin\Debug\ListBox.exe
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\bin\Debug\ListBox.pdb
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\bin\Debug\ListBox.xml
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.vbprojAssemblyReference.cache
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.frmListbox.resources
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.Resources.resources
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.vbproj.GenerateResource.cache
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.vbproj.CoreCompileInputs.cache
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.exe
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.xml
+D:\DWEC\DWEC\VisualBasic\ListBox - copia\ListBox\obj\Debug\ListBox.pdb

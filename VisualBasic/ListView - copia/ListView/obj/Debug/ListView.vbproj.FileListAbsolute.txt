@@ -10,3 +10,15 @@ C:\vb\ListView\ListView\obj\Debug\ListView.frmListView.resources
 C:\vb\ListView\ListView\obj\Debug\ListView.exe
 C:\vb\ListView\ListView\obj\Debug\ListView.xml
 C:\vb\ListView\ListView\obj\Debug\ListView.pdb
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\bin\Debug\ListView.exe.config
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\bin\Debug\ListView.exe
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\bin\Debug\ListView.pdb
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\bin\Debug\ListView.xml
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.vbprojAssemblyReference.cache
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.frmListView.resources
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.Resources.resources
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.vbproj.GenerateResource.cache
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.vbproj.CoreCompileInputs.cache
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.exe
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.xml
+D:\DWEC\DWEC\VisualBasic\ListView - copia\ListView\obj\Debug\ListView.pdb

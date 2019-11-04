@@ -52,12 +52,8 @@
     End Sub
 
     Private Sub BtnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
-        If lbVentas.SelectedIndex < 0 Then
-            MsgBox("Debe seleccionar una venta")
-        Else
-            lblTotal.Text = CDbl(lblTotal.Text) - CDbl(lbVentas.SelectedItem.ToString)
-            lbVentas.Items.RemoveAt(lbVentas.SelectedIndex)
-        End If
+        lblTotal.Text = 0
+        lbVentas.Items.Clear()
     End Sub
 
     Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
