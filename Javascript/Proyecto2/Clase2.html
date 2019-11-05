@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2ª Clase</title>
+</head>
+<body>
+<header>
+    <h1>Los operadores</h1>
+</header>
+<main>
+    <table style="border:1px solid black; text-align: center; float:left;">
+        <caption>Operadores</caption>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Operacion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>+</td>
+            <td id="ope1"></td>
+            <td id="res1"></td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td id="ope2"></td>
+            <td id="res2"></td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td id="ope3"></td>
+            <td id="res3"></td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td id="ope4"></td>
+            <td id="res4"></td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td id="ope5"></td>
+            <td id="res5"></td>
+        </tr>
+        <tr>
+            <td>**</td>
+            <td id="ope6"></td>
+            <td id="res6"></td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td id="ope7"></td>
+            <td id="res7"></td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td id="ope8"></td>
+            <td id="res8"></td>
+        </tr>
+    </table>
+    <table style="border:1px solid black; text-align: center; float:left;">
+        <caption>Asignaciones</caption>
+        <thead>
+        <tr>
+            <th>Asignador</th>
+            <th>Asignacion</th>
+            <th>Resultado</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>=</td>
+            <td id="as1"></td>
+            <td id="re1"></td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td id="as2"></td>
+            <td id="re2"></td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td id="as3"></td>
+            <td id="re3"></td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td id="as4"></td>
+            <td id="re4"></td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td id="as5"></td>
+            <td id="re5"></td>
+        </tr>
+        <tr>
+            <td>**=</td>
+            <td id="as6"></td>
+            <td id="re6"></td>
+        </tr>
+    </table>
+    <script>
+        "use strict";
+        /*
+        * Operadores
+        *   +   -> suma
+        *   -   -> resta
+        *   *   -> producto
+        *   /   -> division
+        *   %   -> resto
+        *   **  -> potenciacion (numero**2)
+        *   ++  -> incremental
+        *   --  -> decremental
+        *
+        * Asignacion
+        *   =   -> Asignacion
+        *   +=, -=, *=, /=, **=
+        *   variable++, variable-- -> post
+        *   ++variable, --variable -> pre
+        *
+        * Comparacion
+        *   ==  -> igualdad
+        *   === -> igualdad estricta
+        *   <   -> menor que
+        *   >   -> mayor que
+        *   <=  -> menor o igual que
+        *   >=  -> mayor o igual que
+        *   !=  -> distinto
+        *   !== -> distinto estrictamente
+        *
+        * */
+        var num1 = 1, num2 = 2;
+
+        document.getElementById("ope1").innerHTML = num1 + " + " + num2;
+        document.getElementById("res1").innerHTML = num1 + num2;
+
+        document.getElementById("ope2").innerHTML = num1 + " - " + num2;
+        document.getElementById("res2").innerHTML = num1 - num2;
+
+        document.getElementById("ope3").innerHTML = num1 + " * " + num2;
+        document.getElementById("res3").innerHTML = num1 * num2;
+
+        document.getElementById("ope4").innerHTML = num1 + " / " + num2;
+        document.getElementById("res4").innerHTML = (num1 / num2).toPrecision(2);
+
+        document.getElementById("ope5").innerHTML = num1 + " % " + num2;
+        document.getElementById("res5").innerHTML = num1 % num2;
+
+        document.getElementById("ope6").innerHTML = num2 + " ** " + num2;
+        document.getElementById("res6").innerHTML = num2 ** num2;
+
+        document.getElementById("ope7").innerHTML = num1 + "++";
+        num1++;
+        document.getElementById("res7").innerHTML = num1;
+
+        document.getElementById("ope8").innerHTML = num1 + "--";
+        num1--;
+        document.getElementById("res8").innerHTML = num1;
+
+        document.getElementById("as1").innerHTML = "num1 = " + 2;
+        num1 = 2;
+        document.getElementById("re1").innerHTML = num1;
+
+        document.getElementById("as2").innerHTML = "num1 += " + 4;
+        num1 += 4;
+        document.getElementById("re2").innerHTML = num1;
+
+        document.getElementById("as3").innerHTML = "num1 -= " + 4;
+        num1 -= 4;
+        document.getElementById("re3").innerHTML = num1;
+
+        document.getElementById("as4").innerHTML = "num1 *= " + 4;
+        num1 *= 4;
+        document.getElementById("re4").innerHTML = num1;
+
+        document.getElementById("as5").innerHTML = "num1 /= " + 4;
+        num1 /= 4;
+        document.getElementById("re5").innerHTML = num1;
+
+        document.getElementById("as6").innerHTML = "num1 **= " + 4;
+        num1 **= 4;
+        document.getElementById("re6").innerHTML = num1;
+
+        var num1 = new Number(1);
+        var num2 = new Number(2);
+        var str1 = new String(1);
+
+    </script>
+</main>
+</body>
+</html>
