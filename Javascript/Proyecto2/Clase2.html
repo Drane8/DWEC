@@ -99,6 +99,56 @@
             <td id="re6"></td>
         </tr>
     </table>
+    <table style="border:1px solid black; text-align: center; float:left;">
+        <caption>Operadores</caption>
+        <thead>
+        <tr>
+            <th>Comparador</th>
+            <th>Comparacion</th>
+            <th>Resultado</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>==</td>
+            <td id="comp1"></td>
+            <td id="resu1"></td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td id="comp2"></td>
+            <td id="resu2"></td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td id="comp3"></td>
+            <td id="resu3"></td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td id="comp4"></td>
+            <td id="resu4"></td>
+        </tr>
+        <tr>
+            <td>&ge;</td>
+            <td id="comp5"></td>
+            <td id="resu5"></td>
+        </tr>
+        <tr>
+            <td>&le;</td>
+            <td id="comp6"></td>
+            <td id="resu6"></td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td id="comp7"></td>
+            <td id="resu7"></td>
+        </tr>
+        <tr>
+            <td>!==</td>
+            <td id="comp8"></td>
+            <td id="resu8"></td>
+        </tr>
+    </table>
     <script>
         "use strict";
         /*
@@ -181,9 +231,12 @@
         num1 **= 4;
         document.getElementById("re6").innerHTML = num1;
 
-        var num1 = new Number(1);
+        var num1 = new Integer(1);
         var num2 = new Number(2);
         var str1 = new String(1);
+
+        document.getElementById("comp1").innerHTML = num1 + " == " + str1;
+        document.getElementById("resu1").innerHTML = (num1 == str1);
 
     </script>
 </main>
