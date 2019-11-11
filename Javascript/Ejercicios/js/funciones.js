@@ -145,11 +145,11 @@ function js8() {
 
 function js10() {
     let resul = "";
-    for(let i = 1; i<=30;i++){
-        for(let j = 1; j<=i;j++){
+    for (let i = 1; i <= 30; i++) {
+        for (let j = 1; j <= i; j++) {
             resul += i;
         }
-        resul+="\n";
+        resul += "\n";
     }
     document.getElementById("resul").innerHTML = resul;
 }
@@ -163,11 +163,55 @@ function js11() {
     } while (isNaN(num) || num <= 0)
 
     let resul = "";
-    for(let i = num; i>=1;i--){
-        for(let j = 1; j<=i;j++){
+    for (let i = num; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
             resul += i;
         }
-        resul+="\n";
+        resul += "\n";
     }
+    document.getElementById("resul").innerHTML = resul;
+}
+
+function js12() {
+    let resul = "";
+    for (let i = 1; i <= 500; i++) {
+        resul += i;
+        if (i % 4 == 0) {
+            resul += " (Múltiplo de 4)";
+        }
+        if (i % 9 == 0) {
+            resul += " (Múltiplo de 9)";
+        }
+        resul += "\n"
+        if (i % 5 == 0) {
+            resul += "--------------------\n";
+        }
+    }
+
+    document.getElementById("resul").innerHTML = resul;
+}
+
+function js13() {
+    let filas, columnas;
+
+    do {
+        filas = parseInt(prompt("Introduzca nº filas", "1"));
+    } while (isNaN(filas) || filas <= 0)
+    do {
+        columnas = parseInt(prompt("Introduzca nº columnas", "1"));
+    } while (isNaN(columnas) || columnas <= 0)
+
+    let resul = "<table>";
+
+    for (let i = filas; i >= 1; i--) {
+        resul+="<tr>"
+        for (let j = columnas; j >= 1; j--) {
+            resul+="<td>" + (j*i) + "</td>";
+        }
+
+        resul+="</tr>"
+    }
+
+    resul += "</table>"
     document.getElementById("resul").innerHTML = resul;
 }
