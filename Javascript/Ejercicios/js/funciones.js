@@ -1,5 +1,5 @@
 function js1() {
-    var num1, num2;
+    let num1, num2;
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
@@ -20,7 +20,7 @@ function js1() {
 
 function js2() {
 
-    var num, suma = 0, contador = 0;
+    let num, suma = 0, contador = 0;
 
     num = parseInt(prompt("Introduzca un número", "1"));
     while (num >= 0) {
@@ -35,7 +35,7 @@ function js2() {
 }
 
 function js3() {
-    var num1, num2;
+    let num1, num2;
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
@@ -45,9 +45,9 @@ function js3() {
         num2 = parseInt(prompt("Dame otro número", "1"));
     } while (isNaN(num2) || num2 <= num1)
 
-    var resul = "";
+    let resul = "";
 
-    for (var i = num1; i <= num2; i++) {
+    for (let i = num1; i <= num2; i++) {
         if (i % 2 != 0) {
             resul += " " + i;
         }
@@ -57,15 +57,15 @@ function js3() {
 }
 
 function js4() {
-    var num;
+    let num;
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
     } while (isNaN(num) || num <= 0)
 
-    var resul = "";
+    let resul = "";
 
-    for (var i = 2; i < num; i++) {
+    for (let i = 2; i < num; i++) {
         if (num % i == 0) {
             resul += " " + i;
         }
@@ -76,13 +76,13 @@ function js4() {
 }
 
 function js5() {
-    var num;
+    let num;
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
     } while (isNaN(num) || num <= 0)
 
-    var resul = "impar";
+    let resul = "impar";
 
     if (num % 2 == 0) {
         resul = "par";
@@ -92,7 +92,7 @@ function js5() {
 }
 
 function js6() {
-    var num;
+    let num;
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
@@ -100,7 +100,7 @@ function js6() {
 
     resul = "Tabla de multiplicar de " + num + "\n";
 
-    for (var i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 10; i++) {
         resul += num + " * " + i + " = " + (num * i) + "\n";
     }
 
@@ -108,7 +108,7 @@ function js6() {
 }
 
 function js7() {
-    var num1, num2;
+    let num1, num2;
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
@@ -117,7 +117,7 @@ function js7() {
         num2 = parseInt(prompt("Dame otro número", "1"));
     } while (isNaN(num2) || num2 <= 0)
 
-    var resul = num1 + " + " + num2 + " = " + (num1 + num2) + "\n" +
+    let resul = num1 + " + " + num2 + " = " + (num1 + num2) + "\n" +
         num1 + " - " + num2 + " = " + (num1 - num2) + "\n" +
         num1 + " * " + num2 + " = " + (num1 * num2) + "\n" +
         num1 + " / " + num2 + " = " + (num1 / num2) + "\n";
@@ -129,8 +129,8 @@ function js7() {
 }
 
 function js8() {
-    var dni;
-    var varras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+    let dni;
+    let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
 
     dni = prompt("Introduzca su dni", "0")
     while (dni != null && (isNaN(parseInt(dni)) || dni < 0 || dni > 99999999)) {
@@ -139,14 +139,14 @@ function js8() {
     }
 
     if (dni != null) {
-        document.getElementById("resul").innerHTML = "varra del dni " + dni + " = " + varras[(dni % 23)];
+        document.getElementById("resul").innerHTML = "letra del dni " + dni + " = " + letras[(dni % 23)];
     }
 }
 
 function js10() {
-    var resul = "";
-    for (var i = 1; i <= 30; i++) {
-        for (var j = 1; j <= i; j++) {
+    let resul = "";
+    for (let i = 1; i <= 30; i++) {
+        for (let j = 1; j <= i; j++) {
             resul += i;
         }
         resul += "\n";
@@ -156,15 +156,15 @@ function js10() {
 
 function js11() {
 
-    var num;
+    let num;
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
     } while (isNaN(num) || num <= 0)
 
-    var resul = "";
-    for (var i = num; i >= 1; i--) {
-        for (var j = 1; j <= i; j++) {
+    let resul = "";
+    for (let i = num; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
             resul += i;
         }
         resul += "\n";
@@ -173,8 +173,8 @@ function js11() {
 }
 
 function js12() {
-    var resul = "";
-    for (var i = 1; i <= 500; i++) {
+    let resul = "";
+    for (let i = 1; i <= 500; i++) {
         resul += i;
         if (i % 4 == 0) {
             resul += " (Múltiplo de 4)";
@@ -192,7 +192,7 @@ function js12() {
 }
 
 function js13() {
-    var filas, columnas;
+    let filas, columnas;
 
     do {
         filas = parseInt(prompt("Introduzca nº filas", "1"));
@@ -201,11 +201,11 @@ function js13() {
         columnas = parseInt(prompt("Introduzca nº columnas", "1"));
     } while (isNaN(columnas) || columnas <= 0)
 
-    var resul = "<table>";
+    let resul = "<table>";
 
-    for (var i = filas; i >= 1; i--) {
+    for (let i = filas; i >= 1; i--) {
         resul += "<tr>"
-        for (var j = columnas; j >= 1; j--) {
+        for (let j = columnas; j >= 1; j--) {
             resul += "<td>" + (j * i) + "</td>";
         }
 
@@ -217,7 +217,7 @@ function js13() {
 }
 
 function js14() {
-    var num1, num2, num3;
+    let num1, num2, num3;
     num1 = Math.floor(Math.random() * 99) + 1;
     do {
         num2 = Math.floor(Math.random() * 99) + 1;
@@ -232,20 +232,20 @@ function js14() {
 }
 
 function js15() {
-    var texto;
+    let texto;
     texto = prompt("Introduzca un texto:");
-    var resul = texto.charAt(0);
-    for (var i = 1; i < texto.length; i++) {
+    let resul = texto.charAt(0);
+    for (let i = 1; i < texto.length; i++) {
         resul += "-" + texto.charAt(i);
     }
     document.getElementById("resul").innerHTML = resul;
 }
 
 function js16() {
-    var texto;
+    let texto;
     texto = prompt("Introduzca un texto:");
-    var vocales = texto.match(/[aeiou]/gi);
-    var total = 0;
+    let vocales = texto.match(/[aeiou]/gi);
+    let total = 0;
     if (vocales !== null) {
         total = vocales.length;
     }
@@ -253,10 +253,10 @@ function js16() {
 }
 
 function js17() {
-    var texto;
+    let texto;
     texto = prompt("Introduzca un texto:");
-    var resul = "";
-    var inicio = texto.indexOf("("), final = texto.lastIndexOf(")");
+    let resul = "";
+    let inicio = texto.indexOf("("), final = texto.lastIndexOf(")");
     if (inicio >= 0) {
         if (final == -1) {
             resul = texto.substr(inicio);
@@ -268,22 +268,22 @@ function js17() {
 }
 
 function js18() {
-    var texto;
+    let texto;
     texto = prompt("Introduzca un texto:");
-    var resul = "";
-    for (var i = texto.length - 1; i >= 0; i--) {
+    let resul = "";
+    for (let i = texto.length - 1; i >= 0; i--) {
         resul += texto.charAt(i);
     }
     document.getElementById("resul").innerHTML = resul;
 }
 
 function js19() {
-    var texto;
+    let texto;
     texto = prompt("Introduzca un texto:");
-    var resul = texto;
+    let resul = texto;
     texto = texto.toLowerCase().replace(/\s/g, "");
-    var textoReves = ""
-    for (var i = texto.length - 1; i >= 0; i--) {
+    let textoReves = ""
+    for (let i = texto.length - 1; i >= 0; i--) {
         textoReves += texto.charAt(i);
     }
     if (texto == textoReves) {
@@ -295,14 +295,14 @@ function js19() {
 }
 
 function js20() {
-    var num;
+    let num;
     do {
         num = parseInt(prompt("Introduzca un numero entre el 1 y el 100"));
     } while (isNaN(num) || num < 1 || num > 100)
 
-    var a = 0, b = 1, temp;
-    var resul = a + " ";
-    for (var i = 0; i < (num - 1); i++) {
+    let a = 0, b = 1, temp;
+    let resul = a + " ";
+    for (let i = 0; i < (num - 1); i++) {
         temp = a + b;
         b = a;
         a = temp;
@@ -315,13 +315,13 @@ function js20() {
 }
 
 function js21() {
-    var opciones = ['piedra', 'papel', 'tijera'];
-    var pc = Math.floor(Math.random() * 3);
-    var texto;
+    let opciones = ['piedra', 'papel', 'tijera'];
+    let pc = Math.floor(Math.random() * 3);
+    let texto;
     do {
         texto = prompt("Introduzca piedra, papel o tijera").toLowerCase().trim();
     } while (opciones.indexOf(texto) < 0)
-    var jugador = opciones.indexOf(texto);
+    let jugador = opciones.indexOf(texto);
 
     if (pc === jugador) {
         resul = "Ambos elegisteis " + opciones[pc] + " por lo que es un empate."

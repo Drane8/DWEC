@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css"/>
+    <script src="js/formulario.js"></script>
+</head>
+<body>
+<header>
+    <hgroup>
+        <h1>Formularios y Eventos</h1>
+        <h2>Uso y manejo de eventos</h2>
+    </hgroup>
+</header>
+<section>
+    <form id="Formulario" action="" onsubmit="return false">
+        <p>
+            <label for="nombre">Nombre :</label>
+            <input type="text" class="textos" id="nombre" name="et1" placeholder="Nombre" value=""/>
+        </p>
+        <p>
+            <label for="apellido">Apellido :</label>
+            <input type="text" class="textos" id="apellido" name="et1" placeholder="Apellido" value=""/>
+        </p>
+        <p>
+        <table>
+            <tr>
+                <td>
+                    <input type="radio" name="genero" value="Varon" checked/>Varón<br>
+                    <input type="radio" name="genero" value="Mujer"/>Mujer<br>
+                    <input type="radio" name="genero" value="otro"/>Sin genero<br>
+                </td>
+                <td>
+                    <input type="checkbox" class="vehi" name="vehiculo" value="coche" checked/>Coche<br>
+                    <input type="checkbox" class="vehi" name="vehiculo" value="Andando" />Andando<br>
+                    <input type="checkbox" class="vehi" name="vehiculo" value="avion" />Avion<br>
+                    <input type="checkbox" class="vehi" name="vehiculo" value="tren" />Tren<br>
+                    <input type="checkbox" class="vehi" name="vehiculo" value="bici" />Bicicleta<br>
+                </td>
+                <td>
+                    <button onclick="sexo()">Sexo y vehiuclo</button>
+                </td>
+                <td>
+                    <h3 id="sexo"></h3>
+                </td>
+                <td>
+                    <h3 id="vehiculo"></h3>
+                </td>
+            </tr>
+        </table>
+        </p>
+    </form>
+</section>
+</body>
+</html>
