@@ -1,14 +1,17 @@
+/*Daniel Garcia*/
+"use strict";
+
 function js1() {
     let num1, num2;
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num1) || num1 <= 0)
+    } while (isNaN(num1) || num1 <= 0);
     do {
         num2 = parseInt(prompt("Dame otro número", "1"));
-    } while (isNaN(num2) || num2 <= 0)
+    } while (isNaN(num2) || num2 <= 0);
 
-    if (num1 == num2) {
+    if (num1 === num2) {
         document.getElementById("resul").innerHTML = "Los numeros " + num1 +
             " y " + num2 + " son iguales";
     } else if (num1 > num2) {
@@ -39,16 +42,16 @@ function js3() {
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num1))
+    } while (isNaN(num1));
 
     do {
         num2 = parseInt(prompt("Dame otro número", "1"));
-    } while (isNaN(num2) || num2 <= num1)
+    } while (isNaN(num2) || num2 <= num1);
 
     let resul = "";
 
     for (let i = num1; i <= num2; i++) {
-        if (i % 2 != 0) {
+        if (i % 2 !== 0) {
             resul += " " + i;
         }
     }
@@ -61,12 +64,12 @@ function js4() {
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num) || num <= 0)
+    } while (isNaN(num) || num <= 0);
 
     let resul = "";
 
     for (let i = 2; i < num; i++) {
-        if (num % i == 0) {
+        if (num % i === 0) {
             resul += " " + i;
         }
     }
@@ -80,11 +83,11 @@ function js5() {
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num) || num <= 0)
+    } while (isNaN(num) || num <= 0);
 
     let resul = "impar";
 
-    if (num % 2 == 0) {
+    if (num % 2 === 0) {
         resul = "par";
     }
 
@@ -92,11 +95,11 @@ function js5() {
 }
 
 function js6() {
-    let num;
+    let num, resul;
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num) || num <= 0)
+    } while (isNaN(num) || num <= 0);
 
     resul = "Tabla de multiplicar de " + num + "\n";
 
@@ -112,10 +115,10 @@ function js7() {
 
     do {
         num1 = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num1) || num1 <= 0)
+    } while (isNaN(num1) || num1 <= 0);
     do {
         num2 = parseInt(prompt("Dame otro número", "1"));
-    } while (isNaN(num2) || num2 <= 0)
+    } while (isNaN(num2) || num2 <= 0);
 
     let resul = num1 + " + " + num2 + " = " + (num1 + num2) + "\n" +
         num1 + " - " + num2 + " = " + (num1 - num2) + "\n" +
@@ -132,7 +135,7 @@ function js8() {
     let dni;
     let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
 
-    dni = prompt("Introduzca su dni", "0")
+    dni = prompt("Introduzca su dni", "0");
     while (dni != null && (isNaN(parseInt(dni)) || dni < 0 || dni > 99999999)) {
         alert("Dni incorrecto");
         dni = prompt("Introduzca su dni", "1");
@@ -160,7 +163,7 @@ function js11() {
 
     do {
         num = parseInt(prompt("Dame un número", "1"));
-    } while (isNaN(num) || num <= 0)
+    } while (isNaN(num) || num <= 0);
 
     let resul = "";
     for (let i = num; i >= 1; i--) {
@@ -176,14 +179,14 @@ function js12() {
     let resul = "";
     for (let i = 1; i <= 500; i++) {
         resul += i;
-        if (i % 4 == 0) {
+        if (i % 4 === 0) {
             resul += " (Múltiplo de 4)";
         }
-        if (i % 9 == 0) {
+        if (i % 9 === 0) {
             resul += " (Múltiplo de 9)";
         }
-        resul += "\n"
-        if (i % 5 == 0) {
+        resul += "\n";
+        if (i % 5 === 0) {
             resul += "--------------------\n";
         }
     }
@@ -196,15 +199,15 @@ function js13() {
 
     do {
         filas = parseInt(prompt("Introduzca nº filas", "1"));
-    } while (isNaN(filas) || filas <= 0)
+    } while (isNaN(filas) || filas <= 0);
     do {
         columnas = parseInt(prompt("Introduzca nº columnas", "1"));
-    } while (isNaN(columnas) || columnas <= 0)
+    } while (isNaN(columnas) || columnas <= 0);
 
     let resul = "<table>";
 
     for (let i = filas; i >= 1; i--) {
-        resul += "<tr>"
+        resul += "<tr>";
         for (let j = columnas; j >= 1; j--) {
             resul += "<td>" + (j * i) + "</td>";
         }
@@ -212,7 +215,7 @@ function js13() {
         resul += "</tr>"
     }
 
-    resul += "</table>"
+    resul += "</table>";
     document.getElementById("resul").innerHTML = resul;
 }
 
@@ -221,10 +224,10 @@ function js14() {
     num1 = Math.floor(Math.random() * 99) + 1;
     do {
         num2 = Math.floor(Math.random() * 99) + 1;
-    } while (num2 == num1)
+    } while (num2 === num1);
     do {
         num3 = Math.floor(Math.random() * 99) + 1;
-    } while (num3 == num1 || num3 == num2)
+    } while (num3 === num1 || num3 === num2);
 
     document.getElementById("resul").innerHTML = "Número aleatorio 1: " + num1 +
         "\nNúmero aleatorio 2: " + num2 + "\nNúmero aleatorio 3: " + num3;
@@ -258,7 +261,7 @@ function js17() {
     let resul = "";
     let inicio = texto.indexOf("("), final = texto.lastIndexOf(")");
     if (inicio >= 0) {
-        if (final == -1) {
+        if (final === -1) {
             resul = texto.substr(inicio);
         } else {
             resul = texto.substring(inicio, final + 1);
@@ -282,11 +285,11 @@ function js19() {
     texto = prompt("Introduzca un texto:");
     let resul = texto;
     texto = texto.toLowerCase().replace(/\s/g, "");
-    let textoReves = ""
+    let textoReves = "";
     for (let i = texto.length - 1; i >= 0; i--) {
         textoReves += texto.charAt(i);
     }
-    if (texto == textoReves) {
+    if (texto === textoReves) {
         resul += "\nEs un palindromo";
     } else {
         resul += "\nNo es un palindromo"
@@ -298,7 +301,7 @@ function js20() {
     let num;
     do {
         num = parseInt(prompt("Introduzca un numero entre el 1 y el 100"));
-    } while (isNaN(num) || num < 1 || num > 100)
+    } while (isNaN(num) || num < 1 || num > 100);
 
     let a = 0, b = 1, temp;
     let resul = a + " ";
@@ -307,7 +310,7 @@ function js20() {
         b = a;
         a = temp;
         resul += temp + " ";
-        if (i % 5 == 0 && i != 0) {
+        if (i % 5 === 0 && i !== 0) {
             resul += "\n";
         }
     }
@@ -317,10 +320,10 @@ function js20() {
 function js21() {
     let opciones = ['piedra', 'papel', 'tijera'];
     let pc = Math.floor(Math.random() * 3);
-    let texto;
+    let texto, resul;
     do {
         texto = prompt("Introduzca piedra, papel o tijera").toLowerCase().trim();
-    } while (opciones.indexOf(texto) < 0)
+    } while (opciones.indexOf(texto) < 0);
     let jugador = opciones.indexOf(texto);
 
     if (pc === jugador) {
