@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+label{
+    display: inline-block;
+    width:120px;
+    padding: 5px;
+    text-align: right;
+}
+table{
+    margin: 5px auto;
+    border: 1px solid black;
+}
+td, th{
+    border: 1px solid black;
+}
