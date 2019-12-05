@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios y eventos</title>
+    <link rel="stylesheet" type="text/css" href="css/otro.css"/>
+
+    <!-- Usamos el defer, para decirle al sistema,
+    que cargue hasta el /html y despues el archivo
+    de javascript -->
+    <script defer src="js/control.js"></script>
+
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1> Formularios y eventos</h1>
+            <h2>Uso y manejor de los formularios con su control de Javascript</h2>
+        </hgroup>
+        <nav></nav>
+    </header>
+    <section>
+        <form id="f1">
+
+            <!-- para etiquetar el campo con label-->
+            <label for="idDelInput">Nombre: </label>
+            <!-- "type=text" incluir un campo para texto multilinea en-->
+            <input type="text" class="textos" id="idDelInput" /> <!--onmouseleave="alert(this.value)"-->
+            <br/>
+            <br/>
+
+            <label for="apellido">Apellido 1: </label>
+            <input type="text" class="textos" id="apellido"/>
+            <br/>
+            <br/>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" value="varon" checked> Varon<br/>
+                        <input type="radio" value="femenino"> Femenino  <br/>
+                        <input type="radio" value="otro"> Indefinido    <br/>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" class="vehi" name="vehiculo" value="Coche"> Coche   </label><br/>
+                        <label><input type="checkbox" class="vehi" name="vehiculo" value="Avion" checked> Volar </label><br/>
+                        <label><input type="checkbox" class="vehi" name="vehiculo" value="Tren"> En Tren   </label><br/>
+                        <input type="checkbox" class="vehi" name="vehiculo" value="A Pie"> Andando  <br/>
+                        <input type="checkbox" class="vehi" name="vehiculo" value="Bici"> Bicicleta <br/>
+                    </td>
+                    <td>
+                        <button id="sexo">Sexo y Vehiculo</button>
+                    </td>
+                    <td id="sexo1"></td>
+                    <td id="vehiculo"></td>
+                </tr>
+            </table>
+            <br/>
+
+            <label for="color">Colorines: </label>
+            <input type="color" id="color" value="#ff0000"/>
+                <button id="bcolor">Color</button>
+            <br/><br/>
+
+            <label for="fec">Calendarios: </label>
+            <input type="date" id="fec" value="2019-02-09">
+                <button id="bfec">Prueba fecha</button>
+
+            <input type="datetime-local" id="fec1" value="2019-11-16T15:25:33"">
+                <button id="bfec1">Prueba fecha</button> <br/>
+
+            <input type="number" id="num" value="25">
+                <button id="bnum">Numeros</button>
+            <br/> <br/>
+
+            <!-- reiniciar los valores del formulario -->
+            <input type="reset">
+
+        </form>
+    </section>
+</body>
+</html>
