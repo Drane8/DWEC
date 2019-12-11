@@ -8,6 +8,13 @@ label {
     padding: 5px;
     text-align: right;
 }
+input#pob, input#cop{
+    width:60px;
+}
+
+input#eda {
+    width: 50px;
+}
 
 input + label {
     display: inline;

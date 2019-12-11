@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header><h1>*****VALIDACIÓN*****</h1></header>
+<main>
+    <section>
+        <article>
+            <form id="form1">
+                <label for="nom">Nombre:</label><input type="text" id="nom" required><br/>
+                <label for="dir">Direccion:</label><input type="text" id="dir" required><br/>
+                <label for="pob">Población:</label><input type="text" id="pob" required>
+                <label for="cop">Codigo postal:</label><input type="text" id="cop" required><br/>
+                <select id="pai" name="pai">
+                    <option value="" style="display:none">---Seleccione país---</option>
+                    <option value="España">España</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Portugal">Portugal</option>
+                </select><br/>
+                <label>Sexo:</label><input type="radio" name="genero" value="Hombre" id="hom"><label
+                    for="hom">Masculino</label>
+                <input type="radio" name="genero" value="Mujer" id="muj"><label for="muj">Femenino</label>
+                <br/>
+                <label for="eda">Edad:</label><input type="text" id="eda" required>
+                <br/>
+                <label>Preferencias:</label>
+                <input type="checkbox" name="preferencias" value="Rojo" id="red"><label
+                    for="red">Rojo</label>
+                <input type="checkbox" name="preferencias" value="Amarillo" id="yel"><label
+                    for="yel">Amarillo</label>
+                <input type="checkbox" name="preferencias" value="Negro" id="blk"><label for="blk">Negro</label>
+                <input type="checkbox" name="preferencias" value="Blanco" id="wht"><label for="wht">Blanco</label>
+                <br/>
+                <button type="submit" id="env">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </article>
+    </section>
+</main>
+</body>
+</html>
