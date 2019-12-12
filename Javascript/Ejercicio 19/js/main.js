@@ -22,6 +22,7 @@ valores.forEach((valor)=>{
         }
     }
 });
-document.getElementById("resul").innerHTML = "Booleanos: " + booleanos +
-    "<br/>Numericos: " + numericos + "<br/>Suma: " + suma +
-    "<br/>Strings: " + strings + "<br/>Empiezan por vocal: " + empiezaVocal;
+document.getElementById("resul").innerHTML = "Valores: " + valores +
+    "<br/>Booleanos: " + booleanos + "<br/>Numericos: " + numericos +
+    "<br/>Suma: " + suma + "<br/>Strings: " + strings +
+    "<br/>Empiezan por vocal: " + empiezaVocal;
