@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+    text-align: right;
+}
+
+pre {
+    display: block;
+    text-align: left;
+    width:50%;
+    margin:0 auto;
+}
+
+div#divRes {
+    width: 30%;
+    margin: 0 auto;
+}
