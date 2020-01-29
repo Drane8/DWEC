@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 20</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header><h1 id="hora">Subasta</h1></header>
+<main>
+    <section>
+        <article>
+            <hr/>
+            <form action="#">
+                <button id="subasta">Empezar Subasta</button><br/><br/>
+                <input type="radio" name="tiempo" value="5" id="5" checked/><label for="5">5 segundos</label>
+                <input type="radio" name="tiempo" value="60" id="60"/><label for="60">1 minuto</label>
+                <input type="radio" name="tiempo" value="300" id="300"/><label for="300">5 minutos </label>
+                <input type="radio" name="tiempo" value="3600" id="3600"/><label for="3600">1 hora</label>
+                <input type="radio" name="tiempo" value="18000" id="18000"/><label for="18000">5 horas</label>
+                <br/>
+                <h2 id="tiempo">00:00:00</h2>
+                <label for="oferta">Nueva oferta: </label>
+                <input type="text" id="oferta"/>
+                <button id="env" disabled> Enviar </button>
+            </form>
+            <h3>Pujas:</h3>
+            <ul id="pujas">
+
+            </ul>
+        </article>
+    </section>
+</main>
+</body>
+</html>
