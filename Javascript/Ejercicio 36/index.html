@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 20</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/jQuery-3.4.1.js"></script>
+</head>
+<body>
+<header><h1>Alumnos</h1></header>
+<main>
+    <button id="tablas">Ocultar tablas</button>
+    <br/>
+    <br/>
+    <button id="mostrar">Mostrar tabla seleccionada</button>
+    <input type="radio" name="pais" value="eu" id="eu"/><label for="eu">EUROPA</label>
+    <input type="radio" name="pais" value="as" id="as"/><label for="as">ASIA</label>
+    <input type="radio" name="pais" value="all" id="all"/><label for="all">Todas</label>
+    <br/><br/>
+
+    <table id="europa">
+        <caption>EUROPA</caption>
+        <thead>
+        <tr>
+            <th>País</th>
+            <th>Habitantes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Francia</th>
+            <td>170</td>
+        </tr>
+        <tr>
+            <th>Alemania</th>
+            <td>222</td>
+        </tr>
+        <tr>
+            <th>Bélgica</th>
+            <td>150</td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table id="asia">
+    <thead>
+        <caption>ASIA</caption>
+        <tr>
+            <th>País</th>
+            <th>Habitantes</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <th>Japón</th>
+            <td>345</td>
+        </tr>
+        <tr>
+            <th>India</th>
+            <td>678</td>
+        </tr>
+        <tr>
+            <th>China</th>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <th>Indonesia</th>
+            <td>234</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
