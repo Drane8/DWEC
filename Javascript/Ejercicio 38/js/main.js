@@ -56,8 +56,11 @@ $("#term").click(function (ev) {
             } else if (pass !== passR) {
                 alert("Las contraseñas no coinciden")
             } else {
-                $("input[type=text]").css("text-transform", "uppercase").attr("disabled", "disabled");
-                $(".contenedor").append("<label for=\"comentarios\">Comentarios:</label><textarea id=\"comentarios\" rows=\"4\" cols=\"50\">");
+                $("input[type=text]").attr("disabled", "disabled");
+                $(".contenedor").append("<label for=\"comentarios\" id='comen'>Comentarios:</label><textarea id=\"comentarios\" rows=\"4\" cols=\"50\">");
+                $("form").append("\n" +
+                    "        <br/><button id=\"env\">Enviar</button>\n" +
+                    "        <button id=\"res\">Borrar</button>");
                 $("#comentarios").keydown(function (ev) {
                     totalPalabras = $(this).val().split(/[\s]+/).length;
                     if (totalPalabras > maxPalabras) {
@@ -66,7 +69,21 @@ $("#term").click(function (ev) {
                             ev.preventDefault();
                         }
                     }
-                })
+                });
+                $("#env").click(function (ev) {
+                    ev.preventDefault();
+                    $("form").submit();
+                });
+                $("#res").click(function (ev) {
+                    ev.preventDefault();
+                    $("#dinamicos").remove();
+                    $("#comentarios").remove();
+                    $("#comen").remove();
+                    $("#env").remove();
+                    anadidos = false;
+                    $("input[type=text]").css("text-transform", "none").removeAttr("disabled").val("");
+                    $(this).remove();
+                });
             }
         }
     });

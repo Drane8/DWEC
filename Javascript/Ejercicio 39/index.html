@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post de javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header><h1>Mis peliculas preferidas</h1></header>
+<main>
+    <section>
+        <article>
+            <form id="formulario">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="contenedor">
+                        <div><label for="nombre">Nombre:</label><input type="text" id="nombre"/></div>
+                        <div><label for="dni">DNI:</label><input type="text" id="dni"/></div>
+                        <div><label for="sexo">Sexo:</label><br/>
+                            <select id="sexo">
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select></div>
+                        <div><label for="apellidos">Apellidos:</label><input type="text" id="apellidos"/></div>
+                        <div><label for="edad">Edad:</label><input type="text" id="edad"/></div>
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Mejor pelicula</legend>
+                    <input type="radio" id="padr" name="MejPel" checked/><label for="padr">El Padrino</label><br/>
+                    <input type="radio" id="crep" name="MejPel"/><label for="crep">Crepúsculo</label><br/>
+                    <input type="radio" id="od8" name="MejPel"/><label for="od8">Los odiosos 8</label><br/>
+                    <input type="radio" id="ana" name="MejPel"/><label for="ana">Anatomía de un asesinato</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Mi Pelicula</legend>
+                    <select id="peli">
+                        <option>El Padrino</option>
+                        <option>Crepúsculo</option>
+                        <option>Los odiosos 8</option>
+                        <option>Anatomia de un asesinato</option>
+                    </select></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tu opinion</legend>
+                    <textarea rows="15" cols="70"></textarea>
+                </fieldset>
+                <div class="botones" id="botones"><button id="env"><span>Enviar</span></button>
+                <button id="bor"><span>Borrar</span></button></div>
+            </form>
+        </article>
+    </section>
+</main>
+</body>
+</html>

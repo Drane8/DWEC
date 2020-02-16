@@ -1,16 +1,11 @@
-.resul {
-    font-weight: 200;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
+.contenedor{
+    width: 700px;
+    display:flex;
+    flex-wrap: wrap;
 }
-
-.resul .letter {
-    display: inline-block;
-    line-height: 1em;
+.contenedor div{
+    width: 200px;
 }
-
-#contenedor{
-    left:20%;
-    top: 10px;
+fieldset{
+    width: 700px;
 }
