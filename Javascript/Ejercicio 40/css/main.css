@@ -1,0 +1,60 @@
+.contenedor {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecera{
+    width: 50%;
+}
+
+#menu {
+
+}
+
+/* Make jQuery UI Menu into a horizontal menubar with vertical dropdown */
+#menu > li { /* Menubar buttons */
+    display: inline-block;
+}
+#menu > li > ul > li { /* Menubar buttons inside dropdown */
+    display: block;
+}
+
+/* Change dropdown carets to correct direction */
+#menu > li > div > span.ui-icon-caret-1-e {
+    /* Caret on menubar */
+    background:url(https://www.drupal.org/files/issues/ui-icons-222222-256x240.png) no-repeat -64px -16px !important;
+}
+#menu ul li div span.ui-icon-caret-1-e {
+    /* Caret on dropdowns */
+    background:url(https://www.drupal.org/files/issues/ui-icons-222222-256x240.png) no-repeat -32px -16px !important;
+}
+.contenedor div {
+    width: 200px;
+}
+form{
+    width: 644px;
+}
+.botones{
+    display: none;
+    width: 644px;
+    text-align: center;
+}
+fieldset {
+    border: 1px solid #39c;
+    background-color: #CCC;
+    width: 600px;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+legend {
+    color: #39c;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+
+#radios{
+    list-style-type: none;
+}

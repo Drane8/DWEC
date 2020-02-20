@@ -22,6 +22,7 @@ $(document).ready(function () {
 
 
 let anadidos = false;
+let botonanadido = false;
 let maxPalabras = 12;
 let totalPalabras;
 $("#term").click(function (ev) {
@@ -56,34 +57,44 @@ $("#term").click(function (ev) {
             } else if (pass !== passR) {
                 alert("Las contraseñas no coinciden")
             } else {
-                $("input[type=text]").attr("disabled", "disabled");
-                $(".contenedor").append("<label for=\"comentarios\" id='comen'>Comentarios:</label><textarea id=\"comentarios\" rows=\"4\" cols=\"50\">");
-                $("form").append("\n" +
-                    "        <br/><button id=\"env\">Enviar</button>\n" +
-                    "        <button id=\"res\">Borrar</button>");
-                $("#comentarios").keydown(function (ev) {
-                    totalPalabras = $(this).val().split(/[\s]+/).length;
-                    if (totalPalabras > maxPalabras) {
-                        if (ev.keyCode == 48 || ev.keyCode == 8) {
-                        } else if (ev.keyCode < 48 || ev.keyCode > 57) {
-                            ev.preventDefault();
+                if (!botonanadido) {
+                    $("input[type=text]").attr("disabled", "disabled");
+                    $("input[type=password]").attr("disabled", "disabled");
+                    $(".contenedor").append("<label for=\"comentarios\" id='comen'>Comentarios:</label><textarea id=\"comentarios\" rows=\"4\" cols=\"50\">");
+                    $("form").append("\n" +
+                        "        <br/><button id=\"env\">Enviar</button>\n" +
+                        "        <button id=\"res\">Borrar</button>");
+                    $("#comentarios").keydown(function (ev) {
+                        totalPalabras = $(this).val().split(/[\s]+/).length;
+                        if (totalPalabras > maxPalabras) {
+                            if (ev.keyCode == 48 || ev.keyCode == 8) {
+                            } else if (ev.keyCode < 48 || ev.keyCode > 57) {
+                                ev.preventDefault();
+                            }
                         }
-                    }
-                });
-                $("#env").click(function (ev) {
-                    ev.preventDefault();
-                    $("form").submit();
-                });
-                $("#res").click(function (ev) {
-                    ev.preventDefault();
-                    $("#dinamicos").remove();
-                    $("#comentarios").remove();
-                    $("#comen").remove();
-                    $("#env").remove();
-                    anadidos = false;
-                    $("input[type=text]").css("text-transform", "none").removeAttr("disabled").val("");
-                    $(this).remove();
-                });
+                    });
+                    $("#env").click(function (ev) {
+                        ev.preventDefault();
+
+                        if (confirm("¿Estás seguro de que desea enviar?")) {
+                            $("form").submit();
+                        }
+                    });
+                    $("#res").click(function (ev) {
+                        ev.preventDefault();
+                        if (confirm("¿Estás seguro de que deseas reiniciar el formulario?")) {
+                            $("#dinamicos").remove();
+                            $("#comentarios").remove();
+                            $("#comen").remove();
+                            $("#env").remove();
+                            anadidos = false;
+                            botonanadido = false;
+                            $("input[type=text]").css("text-transform", "none").removeAttr("disabled").val("");
+                            $(this).remove();
+                        }
+                    });
+                    botonanadido = true;
+                }
             }
         }
     });

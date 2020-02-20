@@ -2,6 +2,10 @@
 
 $(document).ready(function () {
 
+
+    $("form").sortable();
+    $("form").disableSelection();
+
     $("fieldset:nth-child(1)").show("slide", 500);
     setTimeout(function () {
         $("fieldset:nth-child(2)").show("slide", 500);
