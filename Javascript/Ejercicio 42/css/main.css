@@ -1,0 +1,21 @@
+.resul {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.resul .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+td{
+    min-width: 60px;
+}
