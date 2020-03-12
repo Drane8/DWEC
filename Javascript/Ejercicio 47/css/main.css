@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.casilla{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+}
+.x{
+    background: url("../img/x.png") no-repeat;
+    background-size: cover;
+}
+.o{
+    background: url("../img/circulo.png") no-repeat;
+    background-size: cover;
+}
+.container{
+    width:600px;
+    display: flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+.gana{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    top:75px;
+    left:75px;
+    background-color: gray;
+}
+section{
+    text-align: center;
+}
+.turno{
+    padding: 1em;
+    border: 2px solid darkcyan;
+    width: 30%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.turno p{
+    width: 100%;
+}
+.turno div{
+    padding: 0.3rem;
+}
+.active{
+    border: 2px solid red;
+}
+
